@@ -23,15 +23,15 @@
 	     */
 	    @Override
 	    protected void onCreate(Bundle savedInstanceState) {
-	        super.onCreate(savedInstanceState);
-	        setContentView(R.layout.activity_login);
-	        dbManager = new DBManager(this);
-	        Button loginbtn = (Button) findViewById(R.id.btnLogin);
-	        final EditText passwordtxt = (EditText) findViewById(R.id.passwordText);
-	        final EditText usernametxt = (EditText) findViewById(R.id.usernameText);
-	        final TextView incorrectLogin = (TextView) findViewById(R.id.textView1);
-
-	        incorrectLogin.setVisibility(TextView.INVISIBLE);
+//	        super.onCreate(savedInstanceState);
+//	        setContentView(R.layout.activity_login);
+//	        dbManager = new DBManager(this);
+//	        Button loginbtn = (Button) findViewById(R.id.btnLogin);
+//	        final EditText passwordtxt = (EditText) findViewById(R.id.passwordText);
+//	        final EditText usernametxt = (EditText) findViewById(R.id.usernameText);
+//	        final TextView incorrectLogin = (TextView) findViewById(R.id.textView1);
+//
+//	        incorrectLogin.setVisibility(TextView.INVISIBLE);
 	}
 
 }
