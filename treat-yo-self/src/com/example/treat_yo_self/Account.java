@@ -52,6 +52,9 @@ public class Account {
 	/**transaction linked list*/
 	private List<Transaction> transactions;
 	
+	/**task list*/
+	private List<Task> tasks;
+	
 	/**
 	 * Instantiates a new account.
 	 * 
@@ -64,6 +67,7 @@ public class Account {
 		this.accountName = accountName;
 		this.balance = balance;
 		this.transactions = new LinkedList<Transaction>();
+		this.tasks = new LinkedList<Task>();
 	}
 
 	/**
@@ -119,6 +123,22 @@ public class Account {
 	 */
 	public void setBalance(double balance) {
 		this.balance = balance;
+	}
+	
+	/**
+	 * task list
+	 * @return task list
+	 */
+	public List<Task> getTask() {
+		return tasks;
+	}
+	
+	/**
+	 * add tasks
+	 * @param task
+	 */
+	public void addTask(Task task) {
+		tasks.add(task);
 	}
 
 }
