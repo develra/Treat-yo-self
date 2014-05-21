@@ -16,8 +16,7 @@ public class User {
 
 	/** The account list. */
 	private Account account1;
-	private Account account2;
-	private Account account3;
+	private TreatAccount account2;
 
 	/**
 	 * Instantiates a new user.
@@ -27,14 +26,13 @@ public class User {
 	 * @param firstName the first name
 	 * @param lastName the last name
 	 */
-	public User(String userName, String pass, String firstName, String lastName, String accountname1, String accountname2, String accountname3, double amount1, double amount2, double amount3) {
+	public User(String userName, String pass, String firstName, String lastName, String accountname1, String accountname2, double amount1, double amount2) {
 		this.userName = userName;
 		this.pass = pass;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.account1 = new Account(accountname1, amount1);
-		this.account2 = new Account(accountname2, amount2);
-		this.account3 = new Account(accountname3, amount3);
+		this.account2 = new TreatAccount(accountname2, amount2);
 	}
 
 	/**
@@ -46,7 +44,6 @@ public class User {
 		Account[] accountarr = new Account[3];
 		accountarr[1] = account1;
 		accountarr[2] = account2;
-		accountarr[3] = account3;
 		return accountarr;
 	}
 
@@ -63,17 +60,10 @@ public class User {
 	 *  get account2
 	 * @return
 	 */
-	public Account getAccount2() {
-		return account1;
+	public TreatAccount getAccount2() {
+		return account2;
 	}
 	
-	/**
-	 *  get account3
-	 * @return
-	 */
-	public Account getAccount3() {
-		return account1;
-	}
 
 	/**
 	 * Gets the user name.
