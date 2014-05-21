@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.sql.Connection;
 
-/*	import java.sql.DriverManager;
+	import java.sql.DriverManager;
 	import java.sql.ResultSet;
 	import java.sql.Statement;
 	
@@ -18,7 +18,7 @@ import java.sql.Connection;
 	String driver = "net.sourceforge.jtds.jdbc.Driver";
 	Class.forName(driver).newInstance();
 	//test = com.microsoft.sqlserver.jdbc.SQLServerDriver.class;
-	String connString = "updb1.up.ist.psu.edu;encrypt=fasle;user=sqlpzw5095;password=RqUGthh6;instance=SQLEXPRESS;";
+	String connString = "updb1.up.ist.psu.edu;encrypt=false;user=sqlpzw5095;password=RqUGthh6;instance=SQLEXPRESS;";
 	String username = "sqlpzw5095";
 	String password = "RqUGthh6";
 	conn = DriverManager.getConnection(connString,username,password);
@@ -38,7 +38,7 @@ import java.sql.Connection;
 	Log.w("Error connection","" + e.getMessage());
 	}
 	}
-*/
+
 
 
 public class Account {	
