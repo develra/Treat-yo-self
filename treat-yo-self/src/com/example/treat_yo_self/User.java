@@ -1,55 +1,40 @@
 package com.example.treat_yo_self;
 
-import java.util.LinkedList;
-import java.util.List;
-
 public class User {
-	
+
 	/** The user name. */
 	private String userName;
-	
+
 	/** The password. */
 	private String pass;
-	
-	/** The email. */
-	private String email;
-	
+
 	/** The first name. */
 	private String firstName;
-	
+
 	/** The last name. */
 	private String lastName;
-	
+
 	/** The account list. */
-	private List<Account> accountList;
-	
-	private Account currAccount;
+	private Account account1;
+	private Account account2;
+	private Account account3;
 
 	/**
 	 * Instantiates a new user.
 	 *
 	 * @param userName the user name
-	 * @param pass the pass
+	 * @param pass the password
 	 * @param firstName the first name
 	 * @param lastName the last name
-	 * @param lastName2 
 	 */
-	public User(String userName, String pass, String email, String firstName, String lastName) {
+	public User(String userName, String pass, String firstName, String lastName, String accountname1, String accountname2, String accountname3, double amount1, double amount2, double amount3) {
 		this.userName = userName;
 		this.pass = pass;
-		this.email = email;
 		this.firstName = firstName;
 		this.lastName = lastName;
-		accountList = new LinkedList<Account>();
-	}
-
-	/**
-	 * Adds the account.
-	 *
-	 * @param acc the acc
-	 */
-	public void addAccount(Account acc) {
-		accountList.add(acc);
+		this.account1 = new Account(accountname1, amount1);
+		this.account2 = new Account(accountname2, amount2);
+		this.account3 = new Account(accountname3, amount3);
 	}
 
 	/**
@@ -57,17 +42,37 @@ public class User {
 	 *
 	 * @return the accounts
 	 */
-	public List<Account> getAccounts() {
-		return accountList;
+	public Account[] getAccounts() {
+		Account[] accountarr = new Account[3];
+		accountarr[1] = account1;
+		accountarr[2] = account2;
+		accountarr[3] = account3;
+		return accountarr;
 	}
 
+
 	/**
-	 * This is used for populating the ListView in the home activity. It returns an array of strings formatted to display account type followed by the balance.
-	 *
-	 * @return the string[]
+	 *  get account1
+	 * @return
 	 */
-	public String[] accountArray() {
-		return null;
+	public Account getAccount1() {
+		return account1;
+	}
+	
+	/**
+	 *  get account2
+	 * @return
+	 */
+	public Account getAccount2() {
+		return account1;
+	}
+	
+	/**
+	 *  get account3
+	 * @return
+	 */
+	public Account getAccount3() {
+		return account1;
 	}
 
 	/**
@@ -78,12 +83,7 @@ public class User {
 	public String getUserName() {
 		return userName;
 	}
-   /**Gets the email.
-    * @return the email
-    */
-	public String getEmail() {
-		return email;
-	}
+
 	/**
 	 * Sets the user name.
 	 *
@@ -146,14 +146,7 @@ public class User {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
-	
-	public Account getCurrAccount(){
-		return currAccount;
-	}
-	
-	public void setCurrAccount(Account acc){
-		currAccount = acc;
-	}
+
 	public String toString() {
 		return firstName + " " + lastName;
 	}
