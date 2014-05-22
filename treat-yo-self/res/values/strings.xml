@@ -28,7 +28,7 @@
     <string name="title_activity_homescreen">Home</string>
     <string name="title_activity_register">Register</string>
     <string name="title_activity_goal">Goal</string>
-    <string name="goal">iPad</string>
+    <string name="goal">Beats</string>
         <string name="goal2">iPadd</string>
 	<string name="deposit_prompt">How much money would you like to lock in your rewards chest?</string>
 
