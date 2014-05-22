@@ -7,5 +7,18 @@
         android:orderInCategory="100"
         android:showAsAction="never"
         android:title="@string/action_settings"/>
+    
+    <item android:id="@+id/action_deposit"
+          android:title="@string/title_activity_deposit"
+          android:showAsAction="never" />
+    
+    <item android:id="@+id/action_new_task"
+          android:title="@string/title_activity_new_task"
+          android:showAsAction="never" />
+    
+    <item android:id="@+id/action_log_out"
+          android:title="@string/title_activity_log_out"
+          android:showAsAction="always" />
+    <item android:id="@+id/action_taskpage" android:title="@string/title_activity_new_task"></item>
 
 </menu>

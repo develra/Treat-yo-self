@@ -35,15 +35,32 @@ public class HomescreenActivity extends Activity {
 
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
-		// Handle action bar item clicks here. The action bar will
-		// automatically handle clicks on the Home/Up button, so long
-		// as you specify a parent activity in AndroidManifest.xml.
-		int id = item.getItemId();
-		if (id == R.id.action_settings) {
-			return true;
-		}
-		return super.onOptionsItemSelected(item);
+	    // Handle action bar item clicks here. The action bar will
+	    // automatically handle clicks on the Home/Up button, so long
+	    // as you specify a parent activity in AndroidManifest.xml.
+	    int id = item.getItemId();
+	    if (id == R.id.action_settings) {
+	            return true;
+	    } else if (id == R.id.action_taskpage) {
+	            Intent intent = new Intent(this, TasksActivity.class);
+	            startActivity(intent);
+	            return true;
+	    } else if (id == R.id.action_deposit) {
+	            Intent intent = new Intent(this, DepositActivity.class);
+	            startActivity(intent);
+	            return true;
+	    } else if (id == R.id.action_log_out) {
+	            Intent intent = new Intent(this, LoginActivity.class);
+	            startActivity(intent);
+	            return true;
+	    } else if (id == R.id.action_new_task) {
+	            Intent intent = new Intent(this, NewTaskActivity.class);
+	            startActivity(intent);
+	            return true;
+	    }
+	    return super.onOptionsItemSelected(item);
 	}
+
 
 	/**
 	 * A placeholder fragment containing a simple view.

@@ -10,9 +10,11 @@
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="register">register</string>
-    <string name="title_activity_tasks">TasksActivity</string>
+    <string name="title_activity_tasks">Tasks</string>
     <string name="title_activity_post_welcome">PostWelcomeActivity</string>
     <string name="title_activity_new_task">NewTaskActivity</string>
+    <string name="title_activity_log_out">Log out</string>
+    <string name="title_activity_deposit">Deposit</string>
     <string name="taskName">Your Flavor</string>
     <string name="taskDate">Expiration Date</string>
     <string name="taskImportance">Scoops</string>
@@ -23,8 +25,8 @@
     <string name="title_activity_home">HomeActivity</string>
     <string name="home_head">Hi</string>
     <string name="home_amount">$$</string>
-    <string name="title_activity_homescreen">HomescreenActivity</string>
-    <string name="title_activity_register">RegisterActivity</string>
-    <string name="title_activity_goal">GoalActivity</string>
+    <string name="title_activity_homescreen">Home</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_goal">Goal</string>
 
 </resources>
