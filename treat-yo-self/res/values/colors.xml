@@ -3,10 +3,6 @@
     <color name="black_overlay">#66000000</color>
     <color name="blue_backdrop">#04427A</color>
     <color name="white">#FFFFFF</color>
-	<color name="mint">#6ee8ae</color>
-	<color name="rhubarb">#e64138</color>
-	<color name="slate">#8096bf</color>
-	<color name="cream">#f2e7c4</color>
-	<color name="green">#57834c</color>
+	
 
 </resources>
