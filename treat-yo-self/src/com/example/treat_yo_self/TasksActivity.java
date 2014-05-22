@@ -82,19 +82,19 @@ public class TasksActivity extends Activity {
 	            	//find a new task and replace the task + uncheck the box
 	            	
 	            	box.setChecked(false);
-        			box.setText("STRING NEXT TASK");
+        			box.setText("NEXT TASK");
 	            }
 	            break;
 	        case R.id.checkBox2:
 	            if (checked) {
 	            	box.setChecked(false);
-	            	box.setText("STRING NEXT TASK");
+	            	box.setText("NEXT TASK");
 	            }
 	            break;
 	        case R.id.checkBox3:
 	            if (checked) {
 	            	box.setChecked(false);
-	            	box.setText("STRING NEXT TASK");
+	            	box.setText("NEXT TASK");
 	            }
 	            break;
 	    }
