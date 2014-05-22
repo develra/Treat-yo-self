@@ -95,8 +95,7 @@ public class NewTaskActivity extends Activity {
 				}
 		});
 		/*
-		 * Setting up the button to create a new transaction. See my descriptions in
-		 * Register and Welcome if you're confused.
+		 * Setting up the button to create a new transaction. 
 		 */
 		Button create = (Button) findViewById(R.id.newTransaction_create);
 		
