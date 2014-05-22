@@ -1,8 +1,32 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
         android:background="@drawable/registerbackground"
     tools:context="com.example.treat_yo_self.RegisterActivity"
-    tools:ignore="MergeRootFrame" />
+    tools:ignore="MergeRootFrame" >
+
+    <EditText
+        android:id="@+id/lastname"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="116dp"
+        android:ems="10" />
+    
+    <EditText
+        android:id="@+id/firstname"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="176dp"
+        android:layout_marginTop="116dp"
+        android:ems="10" />
+    
+    
+</RelativeLayout>
+
