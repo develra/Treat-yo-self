@@ -25,6 +25,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.example.treat_yo_self.TasksActivity"
+            android:label="@string/title_activity_tasks" >
+            <intent-filter>
+                <action android:name="com.example.treat_yo_self.TasksActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.treat_yo_self.PostWelcomeActivity"
+            android:label="@string/title_activity_post_welcome" >
+        </activity>
     </application>
 
 </manifest>

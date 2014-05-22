@@ -1,1 +1,4 @@
 /com/
+/.gitignore
+/DBHelper.class
+/DBManager.class
