@@ -27,7 +27,7 @@ public class WelcomeActivity extends Activity {
 	 */
 	private static final boolean AUTO_HIDE = true;
 
-	private final int SPLASH_DISPLAY_TIME = 1500;
+	private final int SPLASH_DISPLAY_TIME = 2500;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
