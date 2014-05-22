@@ -6,13 +6,15 @@
     <string name="action_settings">Settings</string>
     <string name="login">Login</string>
     <string name="title_activity_login">Login</string>
-    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="title_activity_welcome">Welcome </string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="register">register</string>
-    <string name="title_activity_tasks">TasksActivity</string>
-    <string name="title_activity_post_welcome">PostWelcomeActivity</string>
-    <string name="title_activity_new_task">NewTaskActivity</string>
+    <string name="title_activity_tasks">Tasks</string>
+    <string name="title_activity_post_welcome">Post Welcome </string>
+    <string name="title_activity_new_task">New Task</string>
+    <string name="title_activity_log_out">Log out</string>
+    <string name="title_activity_deposit">Deposit</string>
     <string name="taskName">Your Flavor</string>
     <string name="taskDate">Expiration Date</string>
     <string name="taskImportance">Scoops</string>
@@ -20,8 +22,14 @@
     <string name="importance2">Like</string>
     <string name="importance3">Dislike</string>
     <string name="createTask">Get Order</string>
-    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_home">Home</string>
     <string name="home_head">Hi</string>
     <string name="home_amount">$$</string>
+    <string name="title_activity_homescreen">Home</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_goal">Goal</string>
+    <string name="goal">iPad</string>
+        <string name="goal2">iPadd</string>
+	<string name="deposit_prompt">How much money would you like to lock in your rewards chest?</string>
 
 </resources>
