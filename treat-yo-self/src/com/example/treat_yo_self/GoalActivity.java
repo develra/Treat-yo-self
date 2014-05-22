@@ -1,6 +1,5 @@
 package com.example.treat_yo_self;
 
-
 import android.app.Activity;
 import android.app.ActionBar;
 import android.app.AlertDialog;
@@ -10,6 +9,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -17,6 +17,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.os.Build;
 
@@ -40,7 +41,6 @@ public class GoalActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				opensetGoalDia();
-
 			}
 		});
 
@@ -59,6 +59,20 @@ public class GoalActivity extends Activity {
 		        name.setTextColor(Color.WHITE);
 		        name.setHint("Some Good Things");
 		        
+		        final EditText amount = new EditText(GoalActivity.this);
+		        amount.setTextColor(Color.WHITE);
+		        amount.setHint("Amount");
+		        
+		        LinearLayout layout = new LinearLayout(this);
+		        layout.setOrientation(LinearLayout.VERTICAL);
+		        LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(
+		            LinearLayout.LayoutParams.MATCH_PARENT,
+		            LinearLayout.LayoutParams.WRAP_CONTENT);
+		        lp.setMargins(30, 0, 30, 0);
+		        layout.addView(name, lp);
+		        layout.addView(amount, lp);
+		        builder.setView(layout);
+		        
 		        builder.setPositiveButton("Do It", new DialogInterface.OnClickListener() {
 		            public void onClick(DialogInterface dialog, int which) {
 		                
@@ -71,6 +85,13 @@ public class GoalActivity extends Activity {
 		                    dialog.cancel();
 		                }
 		            });
+		        
+		        AlertDialog dialog = builder.show();
+		        TextView messageText = (TextView) dialog
+		            .findViewById(android.R.id.message);
+		        messageText.setGravity(Gravity.CENTER);
+		        dialog.show();
+
 	}
 	
 	
