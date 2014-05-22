@@ -14,7 +14,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginLeft="33dp"
-        android:layout_marginTop="116dp"
+        android:layout_marginTop="119dp"
+        android:maxLength="9"
         android:ems="10" />
     
     <EditText
@@ -24,9 +25,54 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginLeft="176dp"
-        android:layout_marginTop="116dp"
+        android:layout_marginTop="119dp"
+        android:maxLength="9"
         android:ems="10" />
     
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="261dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="170dp"
+        android:maxLength="25"
+        android:ems="10" />
+    
+    <EditText
+        android:id="@+id/acctnum"
+        android:layout_width="261dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="222dp"
+        android:maxLength="25"
+        android:inputType="number"
+        android:ems="10" />
+    
+    <EditText
+        android:id="@+id/routenum"
+        android:layout_width="261dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="274dp"
+        android:maxLength="25"
+        android:inputType="number"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/done"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/routenum"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:alpha="0"
+        android:onClick="gtHome" />
     
 </RelativeLayout>
 
