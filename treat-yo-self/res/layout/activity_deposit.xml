@@ -31,8 +31,10 @@
 
 	<Button android:layout_width="wrap_content" android:layout_height="wrap_content"
 			android:background="@color/slate"
+			android:id="@+id/deposit_button"
 			android:text="Deposit" android:layout_below="@+id/editText" android:layout_centerHorizontal="true"
-			android:longClickable="true"/>
+			android:longClickable="true"
+			android:onClick="make_Deposit"/>
 
 
 </RelativeLayout>
