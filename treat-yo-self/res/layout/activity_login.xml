@@ -4,7 +4,7 @@
                 android:orientation="vertical"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:background="@color/blue_backdrop" android:clickable="true"
+				android:background="@color/cream" android:clickable="true"
                 android:onClick="@string/title_activity_welcome">
 
     <EditText
@@ -12,7 +12,7 @@
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:text=""
-            android:textColor="@color/white"
+			android:textColor="@color/rhubarb"
             android:ems="8"
             android:id="@+id/editText"
             android:enabled="true" android:focusable="true"
@@ -24,25 +24,26 @@
             android:layout_height="wrap_content"
             android:inputType="textPassword"
             android:text=""
-            android:textColor="@color/white"
+			android:textColor="@color/rhubarb"
             android:ems="10"
             android:id="@+id/editText2"
             android:layout_marginBottom="42dp"
             android:layout_above="@+id/button" android:layout_centerHorizontal="true"/>
-    <Button android:background="@color/blue_backdrop"
+	<Button
+			style="@style/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sign In!"
             android:id="@+id/button"
             android:layout_marginBottom="32dp" android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true" android:textColor="@color/white"
+			android:layout_centerHorizontal="true"
             android:onClick="gtHome"/>
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Password"
-            android:textColor="@color/white"
+			android:textColor="@color/rhubarb"
             android:id="@+id/textView"
             android:layout_above="@+id/editText2" android:layout_alignRight="@+id/button"
             android:layout_alignEnd="@+id/button"/>
@@ -51,13 +52,13 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="User Name"
-            android:textColor="@color/white"
+			android:textColor="@color/rhubarb"
             android:id="@+id/textView2" android:layout_above="@+id/editText" android:layout_centerHorizontal="true"/>
     <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/imageView"
-            android:src="@drawable/logo"
+			android:src="@drawable/square_logo"
             android:layout_alignParentTop="true" android:layout_centerHorizontal="true"
             android:layout_above="@+id/textView2"/>
 </RelativeLayout>
