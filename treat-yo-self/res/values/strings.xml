@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TreatYoSelf!</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="login">Login</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="register">register</string>
+    <string name="title_activity_tasks">TasksActivity</string>
+    <string name="title_activity_post_welcome">PostWelcomeActivity</string>
+    <string name="title_activity_new_task">NewTaskActivity</string>
+    <string name="taskName">Your Flavor</string>
+    <string name="taskDate">Expiration Date</string>
+    <string name="taskImportance">Scoops</string>
+    <string name="importance1">Favorite</string>
+    <string name="importance2">Like</string>
+    <string name="importance3">Dislike</string>
+    <string name="createTask">Get Order</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="home_head">Hi</string>
+    <string name="home_amount">$$</string>
+
+</resources>
