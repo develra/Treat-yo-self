@@ -29,13 +29,13 @@
 
 	<LinearLayout
         android:layout_width="200dp"
-        android:layout_height="fill_parent"
+		android:layout_height="wrap_content"
         android:layout_below="@+id/textView2"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="36dp"
-		android:layout_marginBottom="296dp"
+		android:layout_marginBottom="320dp"
 		android:background="@color/slate"
-		android:orientation="vertical" android:textAlignment="center">
+		android:orientation="vertical">
 
 		<CheckBox
             android:id="@+id/checkBox1"
@@ -43,7 +43,8 @@
             android:layout_height="wrap_content"
             android:text="TASK1"
 			android:textColor="@color/white"
-			android:onClick="onCheckboxClicked" android:checked="false" android:enabled="true"/>
+			android:onClick="onCheckboxClicked" android:checked="false" android:enabled="true"
+			android:layout_marginLeft="75px"/>
 
 		<CheckBox
             android:id="@+id/checkBox2"
@@ -51,7 +52,8 @@
             android:layout_height="wrap_content"
             android:text="TASK2"
 			android:textColor="@color/white"
-			android:onClick="onCheckboxClicked" android:checked="false" android:enabled="true"/>
+			android:onClick="onCheckboxClicked" android:checked="false" android:enabled="true"
+			android:layout_marginLeft="75px"/>
 
 		<CheckBox
             android:id="@+id/checkBox3"
@@ -59,7 +61,8 @@
             android:layout_height="wrap_content"
             android:text="TASK3"
 			android:textColor="@color/white"
-			android:onClick="onCheckboxClicked" android:checked="false" android:enabled="true"/>
+			android:onClick="onCheckboxClicked" android:checked="false" android:enabled="true"
+			android:layout_marginLeft="75px"/>
 	</LinearLayout>
 
     <ProgressBar
