@@ -44,15 +44,6 @@ public class GoalActivity extends Activity {
 			}
 		});
 
-		new Handler().postDelayed(new Runnable() {
-			@Override
-			public void run() {
-				/* Create an Intent that will go to the landing page. */
-				Intent mainIntent = new Intent(GoalActivity.this, HomescreenActivity.class); 
-				GoalActivity.this.startActivity(mainIntent);
-				GoalActivity.this.finish();
-			}
-		}, 3000);
 	}
 
 	
