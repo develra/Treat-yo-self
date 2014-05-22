@@ -20,5 +20,8 @@
     <string name="importance2">Like</string>
     <string name="importance3">Dislike</string>
     <string name="createTask">Get Order</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="home_head">Hi</string>
+    <string name="home_amount">$$</string>
 
 </resources>
