@@ -38,6 +38,12 @@
             android:name="com.example.treat_yo_self.PostWelcomeActivity"
             android:label="@string/title_activity_post_welcome" >
         </activity>
+        <activity
+            android:name="com.example.treat_yo_self.NewTaskActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_new_task"
+            android:theme="@style/FullscreenTheme" >
+        </activity>
     </application>
 
 </manifest>
