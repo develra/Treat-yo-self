@@ -17,6 +17,8 @@ import android.os.Handler;
 import android.content.Intent;
 import android.os.Bundle;
 
+import android.widget.ProgressBar;
+
 public class TasksActivity extends Activity {
 
 	@Override
@@ -28,6 +30,10 @@ public class TasksActivity extends Activity {
 			getFragmentManager().beginTransaction()
 					.add(R.id.container, new PlaceholderFragment()).commit();
 		}
+		
+		
+		ProgressBar goalProg = (ProgressBar) findViewById(R.id.progressBar1);
+		goalProg.setProgress(30);
 	}
 
 	@Override
