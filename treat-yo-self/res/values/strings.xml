@@ -25,5 +25,6 @@
     <string name="home_amount">$$</string>
     <string name="title_activity_homescreen">HomescreenActivity</string>
     <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_goal">GoalActivity</string>
 
 </resources>

@@ -5,6 +5,7 @@ import android.app.ActionBar;
 import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -12,24 +13,34 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
 
-public class HomescreenActivity extends Activity {
+public class GoalActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_homescreen);
+		setContentView(R.layout.activity_goal);
 
-		if (savedInstanceState == null) {
-			getFragmentManager().beginTransaction()
-					.add(R.id.container, new PlaceholderFragment()).commit();
-		}
+//		if (savedInstanceState == null) {
+//			getFragmentManager().beginTransaction()
+//					.add(R.id.container, new PlaceholderFragment()).commit();
+//		}
+		
+		new Handler().postDelayed(new Runnable() {
+	        @Override
+	        public void run() {
+	            /* Create an Intent that will go to the landing page. */
+	            Intent mainIntent = new Intent(GoalActivity.this, HomescreenActivity.class); 
+	            GoalActivity.this.startActivity(mainIntent);
+	            GoalActivity.this.finish();
+	        }
+	    }, 3000);
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.homescreen, menu);
+		getMenuInflater().inflate(R.menu.goal, menu);
 		return true;
 	}
 
@@ -56,25 +67,10 @@ public class HomescreenActivity extends Activity {
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
-			View rootView = inflater.inflate(R.layout.activity_homescreen,
-					container, false);
+			View rootView = inflater.inflate(R.layout.activity_goal, container,
+					false);
 			return rootView;
 		}
-	}
-	
-	public void toTasks(View view) {
-		Intent intent = new Intent(this, TasksActivity.class);
-        startActivity(intent);
-	}
-	
-	public void toDeposit(View view) {
-		Intent intent = new Intent(this, DepositActivity.class);
-        startActivity(intent);
-	}
-	
-	public void toGoal(View view) {
-		Intent intent = new Intent(this, GoalActivity.class);
-        startActivity(intent);
 	}
 
 }
