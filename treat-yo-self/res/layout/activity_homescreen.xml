@@ -9,36 +9,32 @@
 
     <Button
         android:id="@+id/tasksbutton"
-        android:layout_width="230dp"
-        android:layout_height="94dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="152dp"
-        android:text=""
+        android:layout_width="3500dp"
+        android:layout_height="125dp"
+		android:text=""
         android:alpha="0"
-        android:onClick="toTasks" />
+        android:onClick="toTasks"
+		android:layout_below="@+id/depositbutton" android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"/>
 
     <Button
         android:id="@+id/depositbutton"
         android:layout_width="203dp"
         android:layout_height="64dp"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginRight="18dp"
-        android:layout_marginTop="79dp"
+		android:layout_marginRight="47dp"
+        android:layout_marginTop="94dp"
         android:alpha="0"
-        android:onClick="toDeposit" />
+        android:onClick="toDeposit" android:layout_alignParentTop="true" android:layout_alignParentRight="true"
+		android:layout_alignParentEnd="true"/>
     
     <Button
         android:id="@+id/goalbutton"
-        android:layout_width="203dp"
+        android:layout_width="250dp"
         android:layout_height="64dp"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginRight="18dp"
-        android:layout_marginTop="259dp"
+		android:layout_marginTop="52dp"
         android:alpha="0"
-        android:onClick="toGoal" />
+        android:onClick="toGoal"
+		android:layout_below="@+id/tasksbutton" android:layout_alignRight="@+id/depositbutton"
+		android:layout_alignEnd="@+id/depositbutton"/>
 
 </RelativeLayout>
