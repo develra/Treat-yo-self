@@ -17,6 +17,7 @@ import android.content.Intent;
 import android.os.Bundle;
 
 public class PostWelcomeActivity extends Activity {
+
 	private final int SPLASH_DISPLAY_SECONDS = 3;
 	
 	@Override
@@ -30,6 +31,7 @@ public class PostWelcomeActivity extends Activity {
 
 	    //set content view AFTER ABOVE sequence (to avoid crash)
 		setContentView(R.layout.activity_post_welcome);
+
 		/* New Handler to go to the landing page 
 	     * and close the welcome screen after some seconds.*/
 	    new Handler().postDelayed(new Runnable() {
