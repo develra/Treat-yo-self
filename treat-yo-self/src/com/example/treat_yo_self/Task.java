@@ -13,6 +13,9 @@ public class Task {
 
     /** The date. */
     private Date date;
+    
+    /** The Importance */
+    private int importance;
 
     /** The process. */
     private boolean done;
@@ -31,12 +34,13 @@ public class Task {
      * @param category
      *            the category
      */
-    public Task(String name, double amount, Date date) {
+    public Task(String name, double amount, Date date, int importance) {
         try {
             this.name = name;
             this.amount = amount;
             this.date = date;
             this.done = false;
+            this.importance = importance;
         } catch (IllegalArgumentException e) {
 
         }

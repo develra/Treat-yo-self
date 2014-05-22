@@ -10,13 +10,13 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/logo_circle"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.example.treat_yo_self.WelcomeActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/title_activity_welcome"
+            android:label="@string/app_name"
             android:theme="@style/FullscreenTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" >
@@ -24,6 +24,25 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.treat_yo_self.TasksActivity"
+            android:label="@string/title_activity_tasks" >
+            <intent-filter>
+                <action android:name="com.example.treat_yo_self.TasksActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.treat_yo_self.PostWelcomeActivity"
+            android:label="@string/title_activity_post_welcome" >
+        </activity>
+        <activity
+            android:name="com.example.treat_yo_self.NewTaskActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_new_task"
+            android:theme="@style/FullscreenTheme" >
         </activity>
     </application>
 
