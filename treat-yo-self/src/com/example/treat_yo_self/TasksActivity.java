@@ -101,15 +101,8 @@ public class TasksActivity extends Activity {
 	}
 	
 	public void onButtonClicked(View view) {
-		new Handler().postDelayed(new Runnable() {
-	        @Override
-	        public void run() {
-	            /* Create an Intent that will go to the landing page. */
-	            Intent mainIntent = new Intent(TasksActivity.this, PostWelcomeActivity.class);
-	            TasksActivity.this.startActivity(mainIntent);
-	            TasksActivity.this.finish();
-	        }
-	    }, 0);
+        Intent intent = new Intent(this, NewTaskActivity.class);
+        startActivity(intent);
 	}
 
 }

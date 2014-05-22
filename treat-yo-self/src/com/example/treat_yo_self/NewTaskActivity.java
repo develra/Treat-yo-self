@@ -105,6 +105,16 @@ public class NewTaskActivity extends Activity {
 			
 			@Override
 			public void onClick(View v) {
+				
+				//Trying to create a cancel button
+//				System.out.println(v.getId());
+//				if(v.getId() == (R.id.cancelbutton)) {
+//					System.out.println("pressed cancel button");
+//					Intent TasksIntent = new Intent(getApplicationContext(),
+//							TasksActivity.class);
+//					startActivity(TasksIntent);
+//				}
+				
 				String name = ((EditText) findViewById(R.id.newTask_name)).getText().toString();
 				//String source = ((EditText) findViewById(R.id.transkind)).getText().toString();
 				//String type;
