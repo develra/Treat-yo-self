@@ -18,7 +18,7 @@ import android.os.Bundle;
 
 public class PostWelcomeActivity extends Activity {
 
-	private final int SPLASH_DISPLAY_SECONDS = 3;
+	private final int SPLASH_DISPLAY_SECONDS = 1;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
