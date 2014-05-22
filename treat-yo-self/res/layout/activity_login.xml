@@ -35,7 +35,7 @@
             android:text="Sign In!"
             android:id="@+id/button"
             android:layout_marginBottom="32dp" android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true" android:textColor="@color/white" android:shadowColor="@color/white"
+            android:layout_centerHorizontal="true" android:textColor="@color/white"
             android:onClick="gtHome"/>
     <TextView
             android:layout_width="wrap_content"
@@ -53,4 +53,11 @@
             android:text="User Name"
             android:textColor="@color/white"
             android:id="@+id/textView2" android:layout_above="@+id/editText" android:layout_centerHorizontal="true"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@drawable/logo"
+            android:layout_alignParentTop="true" android:layout_centerHorizontal="true"
+            android:layout_above="@+id/textView2"/>
 </RelativeLayout>
