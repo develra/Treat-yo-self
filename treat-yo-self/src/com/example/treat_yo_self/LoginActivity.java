@@ -15,9 +15,10 @@ public class LoginActivity extends Activity {
         Parse.initialize(this, "IpTVhN6pW1NELloHetmRvoHLzSlnWqVnnTGMBvX5", "KqkQyLx5eXtv3cDib3Phec9F5amTgKGznMn9YWPv");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        ParseObject testObject = new ParseObject("TestObject");
-        testObject.put("foo", "bar");
-        testObject.saveInBackground();
+        ParseObject userObject = new ParseObject("user");
+        userObject.put("name", "bob");
+        userObject.put("password", "password");
+        userObject.saveInBackground();
     }
 
     public void gtHome(View view) {
