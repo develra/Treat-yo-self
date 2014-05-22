@@ -15,7 +15,12 @@ public class LoginActivity extends Activity {
     }
 
     public void gtHome(View view) {
-        Intent intent = new Intent(this, TasksActivity.class);
+        Intent intent = new Intent(this, HomescreenActivity.class);
+        startActivity(intent);
+    }
+
+    public void gtRegister(View view) {
+        Intent intent = new Intent(this, RegisterActivity.class);
         startActivity(intent);
     }
 
