@@ -15,8 +15,8 @@
     <string name="title_activity_new_task">NewTaskActivity</string>
     <string name="taskName">Your Flavor</string>
     <string name="taskDate">Expiration Date</string>
-    <string name="taskImportance">Scoops</string>
-    <string name="importance1">Favorite</string>
+	<string name="taskImportance">Favs</string>
+	<string name="importance1">Favorite</string>
     <string name="importance2">Like</string>
     <string name="importance3">Dislike</string>
     <string name="createTask">Get Order</string>

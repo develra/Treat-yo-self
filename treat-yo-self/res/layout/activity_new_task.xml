@@ -1,105 +1,113 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#04427A"
-    tools:context="com.example.treat_yo_self.NewTaskActivity" >
+				xmlns:tools="http://schemas.android.com/tools"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="@color/cream"
+				tools:context="com.example.treat_yo_self.NewTaskActivity">
 
-    <ScrollView
-        android:id="@+id/scrollView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_gravity="center"
-        android:layout_alignParentTop="true"
-        tools:ignore="UselessParent" >
+	<ScrollView
+			android:id="@+id/scrollView1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentRight="true"
+			android:layout_gravity="center"
+			android:layout_alignParentTop="true"
+			tools:ignore="UselessParent">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" >
+		<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
 
-            <EditText
-                android:id="@+id/newTask_name"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="45dp"
-                android:hint="@string/taskName"
-                android:textColor="#000000" >
+			<EditText
+					android:id="@+id/newTask_name"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:layout_marginTop="45dp"
+					android:hint="@string/taskName"
+					android:textColor="@color/rhubarb">
 
-                <requestFocus />
-            </EditText>
+				<requestFocus/>
+			</EditText>
 
-           
 
-            <TextView
-                android:id="@+id/textView1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:text="@string/taskImportance"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
+			<TextView
+					android:id="@+id/textView1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="15dp"
+					android:layout_marginLeft="90dp"
+					android:text="@string/taskImportance"
+					android:background="@color/slate"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:textColor="@color/white"/>
 
-            <CheckBox
-                android:id="@+id/importance1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="-20dp"
-                android:text="@string/importance1" />
+			<CheckBox
+					android:id="@+id/importance1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:layout_marginTop="10dp"
+					android:background="@color/mint"
+					android:layout_marginLeft="-20dp"
+					android:text="@string/importance1"
+					android:textColor="@color/rhubarb"
+					/>
 
-            <CheckBox
-                android:id="@+id/importance2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginLeft="-5dp"
-                android:layout_marginTop="10dp"
-                android:text="@string/importance2" />
-            
-            <CheckBox
-                android:id="@+id/importance3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="30dp"
-                android:text="@string/importance3" />
+			<CheckBox
+					android:id="@+id/importance2"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:layout_marginLeft="-5dp"
+					android:layout_marginTop="10dp"
+					android:background="@color/rhubarb"
+					android:textColor="@color/mint"
+					android:text="@string/importance2"/>
 
-            <EditText
-                android:id="@+id/newTaks_date"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="15dp"
-                android:hint="@string/taskDate"
-                android:inputType="date"
-                android:textColor="#000000" />
+			<CheckBox
+					android:id="@+id/importance3"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:layout_marginTop="10dp"
+					android:layout_marginLeft="30dp"
+					android:text="@string/importance3"
+					android:background="@color/slate"/>
 
-            <Button
-                android:id="@+id/newTransaction_create"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="28dp"
-                android:text="@string/createTask"
-                android:background="#04427a" />
+			<EditText
+					android:id="@+id/newTaks_date"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:layout_marginTop="15dp"
+					android:hint="@string/taskDate"
+					android:inputType="date"
+					android:textColor="@color/rhubarb"/>
 
-<!--             <Button
-                android:id="@+id/cancelbutton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="28dp"
-                android:layout_marginBottom="70dp"
-                android:background="#04427a"
-                android:text="Cancel" /> -->
+			<Button
+					android:id="@+id/newTransaction_create"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:layout_marginTop="28dp"
+					android:text="@string/createTask"
+					android:background="#04427a"/>
 
-        </LinearLayout>
-    </ScrollView>
+			<!--             <Button
+							android:id="@+id/cancelbutton"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_gravity="center"
+							android:layout_marginTop="28dp"
+							android:layout_marginBottom="70dp"
+							android:background="#04427a"
+							android:text="Cancel" /> -->
+
+		</LinearLayout>
+	</ScrollView>
 
 </RelativeLayout>
