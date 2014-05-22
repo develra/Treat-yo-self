@@ -3,7 +3,7 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#04427A"
+	android:background="@color/cream"
     android:orientation="horizontal"
     tools:context="com.example.treat_yo_self.TasksActivity"
     tools:ignore="MergeRootFrame" >
@@ -25,41 +25,42 @@
         android:layout_marginTop="58dp"
         android:text="Complete these easy tasks!"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="#FFFFFF" />
+		android:textColor="@color/rhubarb"/>
 
-    <LinearLayout
+	<LinearLayout
         android:layout_width="200dp"
         android:layout_height="fill_parent"
         android:layout_below="@+id/textView2"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="36dp"
-        android:layout_marginBottom="210dp"
-        android:orientation="vertical" >
+		android:layout_marginBottom="296dp"
+		android:background="@color/slate"
+		android:orientation="vertical" android:textAlignment="center">
 
-        <CheckBox
+		<CheckBox
             android:id="@+id/checkBox1"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="TASK1"
-            android:textColor="#FFFFFF"
-            android:onClick="onCheckboxClicked" />
+			android:textColor="@color/white"
+			android:onClick="onCheckboxClicked" android:checked="false" android:enabled="true"/>
 
-        <CheckBox
+		<CheckBox
             android:id="@+id/checkBox2"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="TASK2"
-            android:textColor="#FFFFFF"
-            android:onClick="onCheckboxClicked" />
+			android:textColor="@color/white"
+			android:onClick="onCheckboxClicked" android:checked="false" android:enabled="true"/>
 
-        <CheckBox
+		<CheckBox
             android:id="@+id/checkBox3"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="TASK3"
-            android:textColor="#FFFFFF"
-            android:onClick="onCheckboxClicked" />
-    </LinearLayout>
+			android:textColor="@color/white"
+			android:onClick="onCheckboxClicked" android:checked="false" android:enabled="true"/>
+	</LinearLayout>
 
     <ProgressBar
         android:id="@+id/progressBar1"
@@ -69,9 +70,9 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="60dp"
-        android:background="#FF0000" />
+		android:background="@color/mint"/>
 
-    <TextView
+	<TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -80,9 +81,9 @@
         android:layout_marginBottom="28dp"
         android:text="Get to your goal!"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="#FFFFFF" />
+		android:textColor="@color/rhubarb"/>
 
-    <Button
+	<Button
         android:id="@+id/addtaskbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
