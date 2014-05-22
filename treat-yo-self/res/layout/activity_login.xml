@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="User"
+            android:ems="8"
+            android:id="@+id/editText"
+            android:layout_marginLeft="39dp" android:layout_marginTop="186dp"
+            android:enabled="true" android:focusable="true" android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:text="Password"
+            android:ems="10"
+            android:id="@+id/editText2"
+            android:layout_marginTop="53dp"
+            android:layout_below="@+id/editText" android:layout_alignLeft="@+id/editText"
+            android:layout_alignStart="@+id/editText"/>
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton" android:layout_below="@+id/editText2"
+            android:layout_alignLeft="@+id/editText2" android:layout_alignStart="@+id/editText2"
+            android:layout_marginLeft="30dp" android:layout_marginTop="38dp"/>
+    <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar" android:layout_alignTop="@+id/editText" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" android:layout_marginLeft="68dp"/>
+</RelativeLayout>
