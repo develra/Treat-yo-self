@@ -38,7 +38,7 @@ public class PostWelcomeActivity extends Activity {
 	        @Override
 	        public void run() {
 	            /* Create an Intent that will go to the landing page. */
-	            Intent mainIntent = new Intent(PostWelcomeActivity.this, HomeActivity.class);
+	            Intent mainIntent = new Intent(PostWelcomeActivity.this, TasksActivity.class);
 	            PostWelcomeActivity.this.startActivity(mainIntent);
 	            PostWelcomeActivity.this.finish();
 	        }

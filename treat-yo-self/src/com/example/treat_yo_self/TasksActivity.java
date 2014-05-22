@@ -3,13 +3,19 @@ package com.example.treat_yo_self;
 import android.app.Activity;
 import android.app.ActionBar;
 import android.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
+import android.widget.CheckBox;
+import android.os.Handler;
+import android.content.Intent;
+import android.os.Bundle;
 
 public class TasksActivity extends Activity {
 
@@ -59,6 +65,51 @@ public class TasksActivity extends Activity {
 					container, false);
 			return rootView;
 		}
+	}
+	
+	private final int TASK_DELAY_SECONDS = 5;
+	
+	public void onCheckboxClicked(View view) {
+	    // Is the view now checked?
+	    boolean checked = ((CheckBox) view).isChecked();
+	    
+	    CheckBox box = (CheckBox) view;
+	    // Check which checkbox was clicked
+	    switch(view.getId()) {
+	        case R.id.checkBox1:
+	            if (checked) {
+	            	//find and mark it in the database
+	            	//find a new task and replace the task + uncheck the box
+	            	
+	            	box.setChecked(false);
+        			box.setText("STRING NEXT TASK");
+	            }
+	            break;
+	        case R.id.checkBox2:
+	            if (checked) {
+	            	box.setChecked(false);
+	            	box.setText("STRING NEXT TASK");
+	            }
+	            break;
+	        case R.id.checkBox3:
+	            if (checked) {
+	            	box.setChecked(false);
+	            	box.setText("STRING NEXT TASK");
+	            }
+	            break;
+	    }
+	}
+	
+	public void onButtonClicked(View view) {
+		new Handler().postDelayed(new Runnable() {
+	        @Override
+	        public void run() {
+	            /* Create an Intent that will go to the landing page. */
+	            Intent mainIntent = new Intent(TasksActivity.this, PostWelcomeActivity.class);
+	            TasksActivity.this.startActivity(mainIntent);
+	            TasksActivity.this.finish();
+	        }
+	    }, 0);
 	}
 
 }
