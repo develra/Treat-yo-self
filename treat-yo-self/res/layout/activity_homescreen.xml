@@ -29,5 +29,16 @@
         android:layout_marginTop="79dp"
         android:alpha="0"
         android:onClick="toDeposit" />
+    
+    <Button
+        android:id="@+id/goalbutton"
+        android:layout_width="203dp"
+        android:layout_height="64dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="259dp"
+        android:alpha="0"
+        android:onClick="toGoal" />
 
 </RelativeLayout>

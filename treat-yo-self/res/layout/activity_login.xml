@@ -77,11 +77,11 @@
     <Button
         android:id="@+id/button2"
         android:layout_width="fill_parent"
-        android:layout_height="110dp"
+        android:layout_height="115dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="0dp"
-        android:background="@color/blue_backdrop"
+        android:background="@color/slate"
         android:text="" />
 
     <Button
@@ -91,8 +91,9 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="10dp"
-        android:background="#ff0000"
+        android:background="@color/rhubarb"
         android:text="Register"
+        android:textColor="@color/cream"
         android:onClick="gtRegister" />
 
     <TextView
@@ -102,6 +103,7 @@
         android:layout_above="@+id/button3"
         android:layout_alignLeft="@+id/editText2"
         android:text="Link your Capital One account now!"
+        android:textColor="@color/rhubarb"
 		android:layout_marginBottom="7dp" />
 
     <TextView
@@ -112,6 +114,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="1dp"
         android:text="Don't have an account?"
+        android:textColor="@color/rhubarb"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>
