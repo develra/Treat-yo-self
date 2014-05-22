@@ -22,6 +22,6 @@
     <item android:id="@+id/action_goal"
           android:title="@string/title_activity_goal"
           android:showAsAction="never" />
-    <item android:id="@+id/action_taskpage" android:title="@string/title_activity_new_task"></item>
+    <item android:id="@+id/action_taskpage" android:title="@string/title_activity_tasks"></item>
 
 </menu>
