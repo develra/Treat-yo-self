@@ -6,4 +6,13 @@
     android:background="@drawable/goalbackground"
     tools:context="com.example.treat_yo_self.GoalActivity" >
 
+    <Button
+        android:id="@+id/goal_setGoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="162dp"
+        android:background="#00000000" />
+
 </RelativeLayout>

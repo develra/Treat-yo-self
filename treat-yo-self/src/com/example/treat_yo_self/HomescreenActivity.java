@@ -57,7 +57,7 @@ public class HomescreenActivity extends Activity {
 	            Intent intent = new Intent(this, NewTaskActivity.class);
 	            startActivity(intent);
 	            return true;
-	    }
+	    } 
 	    return super.onOptionsItemSelected(item);
 	}
 
